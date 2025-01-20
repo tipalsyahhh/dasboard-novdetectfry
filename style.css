@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f4f0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.page {
+    width: 120px;
+    padding: 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.page p {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu-1,
+.menu-2,
+.menu-3 {
+    width: 35px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    display: grid;
+    padding: 10px;
+    gap: 25px;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 48%), 0px 1px 3px rgb(0 0 0 / 57%);
+}
+
+.menu-2 {
+    margin-top: 20px;
+}
+
+.menu-3 {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(50%);
+    margin-bottom: 20px;
+}
+
+.pp-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.page a {
+    color: #000;
+    font-size: 20px;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+.fouter {
+    padding: 10px;
+    height: 60px;
+    /* width: calc(100dvw - 170px); */
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.fouter h2 {
+    margin: 0;
+}
+
+.fouter p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #242424;
+}
+
+.search {
+    height: 30px;
+     border-radius: 50px;
+     margin-left: auto;
+     padding: 5px;
+     display: flex;
+     align-items: center;
+     background-color: #ffffff;
+     box-shadow: 0px 4px 6px rgb(0 0 0 / 48%), 0px 1px 3px rgb(0 0 0 / 57%);
+}
+
+.search input {
+    outline: none;
+     border: none;
+     font-size: 12px;
+     color: #000;
+     margin-left: 8px;
+}
+
+.isi {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 48%), 0px 1px 3px rgb(0 0 0 / 57%);
+    border-radius: 25px;
+    height: calc(98dvh - 115px);
+    width: calc(95dvw - 175px);
+    padding: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.isi::-webkit-scrollbar {
+    display: none;
+}
+
+.icon-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .page {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .fouter {
+        margin-top: 0;
+    }
+
+    .isi {
+        width: calc(95dvw - 20px);
+    }
+
+    .search {
+        display: none;
+    }
+
+    .icon-mobile {
+        display: block;
+        margin-left: auto;
+    }
+
+    .btn-menu {
+        border: none;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 30px;
+    }
+}
