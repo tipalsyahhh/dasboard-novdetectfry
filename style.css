@@ -168,7 +168,7 @@ body {
 .isi-menu p,
 .account p {
     margin-left: 8px;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 0;
     font-weight: bold;
 }
@@ -251,7 +251,7 @@ body {
         position: fixed;
         top: 0;
         right: 0;
-        height: 100vh;
+        height: 100dvh;
         width: 300px;
         background: #f5f4f0;
         border-left: 1px solid #ccc;
