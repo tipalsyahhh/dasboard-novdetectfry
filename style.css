@@ -149,15 +149,62 @@ body {
     margin-top: 20px;
 }
 
-.judul-mobile {
-    display: flex;
-    align-items: center;
+.isi-menu,
+.account {
+    display: grid;
+    gap: 18px;
+    font-size: 20px;
 }
 
-.gambar-mobile {
-    width: 45px;
-    height: 45px;
+.isi-menu a,
+.account a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.isi-menu p,
+.account p {
+    margin-left: 8px;
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.user {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-top: 1px solid #2e2e2e;
+    display: flex;
+    align-items: center;
+    width: 87%;
+}
+
+.profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
     margin-right: 8px;
+}
+
+.user h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user p {
+    margin: 0;
+}
+
+.user a {
+    margin-left: auto;
+    color: #000;
+    font-size: 24px
 }
 
 @media (max-width: 768px) {
